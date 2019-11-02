@@ -1,24 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## FARMCONTROL
 
-Things you may want to cover:
+[![Build Status](https://travis-ci.org/tnksss/farm-control.svg?branch=master)](https://travis-ci.org/tnksss/farm-control)
 
-* Ruby version
+[![Maintainability](https://api.codeclimate.com/v1/badges/12838b82b5f05e925997/maintainability)](https://codeclimate.com/github/tnksss/farm-control/maintainability)
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+<a href="https://codeclimate.com/github/tnksss/farm-control/test_coverage"><img src="https://api.codeclimate.com/v1/badges/12838b82b5f05e925997/test_coverage" /></a>
