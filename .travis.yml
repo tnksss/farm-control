@@ -2,10 +2,12 @@ env:
   global:
     - CC_TEST_REPORTER_ID=00c7cfef81d88d6e8ea75f67225a4c7bf5b3de65828babf9bcdc19a0a2cdd708
 addons:
-  postgresql: 10.10
   firefox: '70.0'
   apt:
     update: true
+test:
+  adapter: postgresql
+  database: travis_ci_test
 before_script:
   - sudo apt-get update
   - sudo apt-get install -y imagemagick
@@ -24,9 +26,9 @@ language: ruby
 rvm:
   - 2.6.3
 services:
- - postgresql
- - memcached
- - redis-server
+  - postgresql
+  - memcached
+  - redis-server
 before_install:
   - gem update --system
   - gem install bundler
