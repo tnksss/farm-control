@@ -5,9 +5,14 @@ addons:
   firefox: '70.0'
   apt:
     update: true
-test:
-  adapter: postgresql
-  database: travis_ci_test
+  postgresql: "10"
+  apt:
+    packages:
+    - postgresql-10
+    - postgresql-client-10
+env:
+  global:
+  - PGPORT=5433
 before_script:
   - sudo apt-get update
   - sudo apt-get install -y imagemagick
