@@ -15,6 +15,10 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 
 Rails.application.config.assets.paths << Rails.root.join('vendor', 'assets', 'fonts')
 
-Rails.application.config.assets.precompile += %w[admins/application.scss]
-Rails.application.config.assets.precompile += %w[admins/application.js]
+# Rails.application.config.assets.precompile += %w[admins/application.scss]
+# Rails.application.config.assets.precompile += %w[admins/application.js]
+
+
+Rails.application.config.assets.precompile += %w[admins/application.scss devise/session.scss]
+Rails.application.config.assets.precompile += %w[admins/application.js devise/session.js]
 
