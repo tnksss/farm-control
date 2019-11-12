@@ -6,6 +6,14 @@ database: &database
 mailer: &mailer
   mailer.host: localhost
   mailer.port: '3000'
+  mailer.from: 'valdineimoraes@utfpr.edu.br'
+  mailer.smtp: 'smtp.mailtrap.io'
+  mailer.smtp.port: '2525'
+  mailer.smtp.domain: 'smtp.mailtrap.io'
+  mailer.smtp.username: 'username'
+  mailer.smtp.password: 'password'
+  mailer.smtp.authentication: 'cram_md5'
+
 
 development:
   <<: *database
