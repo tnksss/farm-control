@@ -15,6 +15,7 @@ gem 'devise'
 gem 'bootstrap', '~> 4.3.1'
 gem 'font-awesome-sass'
 gem 'jquery-rails'
+gem 'simple_form'
 
 
 group :development, :test do
