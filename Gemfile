@@ -17,6 +17,9 @@ gem 'font-awesome-sass'
 gem 'jquery-rails'
 gem 'simple_form'
 gem 'rails-i18n', '~> 5.1'
+gem 'carrierwave', '~> 1.0'
+gem 'carrierwave-i18n'
+gem 'mini_magick'
 
 
 group :development, :test do
