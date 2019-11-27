@@ -1,7 +1,8 @@
+sudo: required
 addons:
   postgresql: 9.6
   code_climate: 5cedc31fbc3478eaad679e20c922aa26a7c2dfe0f735915b61bda5acc25d05f9
-  firefox: "65.0"
+  chrome: stable
 after_success:
   - bundle exec codeclimate-test-reporter
 before_script:
